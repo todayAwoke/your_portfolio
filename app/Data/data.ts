@@ -1,15 +1,14 @@
 export const BaseInfo = {
   name: "Tarekegn",
-  position: "Full Stack Web Developer",
+  position: "Agricultural Research Professional ",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit porro numquam ad, vero consequuntur aperiam cumque voluptatum pariatur veniam? Qui facilis est ipsam odio cum!",
-  profilePic: "/images/hero.png",
+    "Welcome to Tarekegn Argaw's Portfolio - A dedicated researcher specializing in multi-environment trial data analysis, crop growth modeling, and innovative statistical methodologies!",
+  profilePic: "/images/hero.jpg",
 };
 
 export const aboutInfo = {
-  title: "Crafting Web Application with Passion and Precision",
-  description:
-    "At webdev warriors, we’re a dedicated team of designers and developers committed to delivering tailored web solutions. With a blend of creativity and technical expertise, we help businesses elevate their online presence and achieve their goals",
+  title: "Advancing Agricultural Research with Expertise and Dedication",  description:
+  "I am a dedicated researcher in Addis Ababa, Ethiopia, with a Master’s in Biostatistics from Jimma University. My focus is on improving agricultural research through advanced statistical models and data analysis. With over ten years of experience, I have led projects in crop modeling, experimental design, and data management. I am committed to training future researchers, contributing to the growth of agricultural science in Ethiopia.",  
   client: "50+",
   experience: "3+",
   project: "200+",
@@ -19,55 +18,45 @@ export const aboutInfo = {
 export const servicesData = [
   {
     id: 1,
-    title: " Web Applications",
-    description: "Tailored web apps built with the latest technologies.",
-    icon: "/images/s1.png",
+    title: "Statistical Analysis and Modeling",
+    description: "Enhancing MET data analysis using advanced statistical models.",
+    icon: "/images/statistical-analysis.png",
   },
   {
     id: 2,
-    title: "E-commerce Websites",
-    description:
-      "Secure online stores with user-friendly shopping and payments.",
-    icon: "/images/s2.png",
+    title: "Crop Growth Modeling",
+    description: "Expertise in optimizing crop breeding strategies through accurate predictions.",
+    icon: "/images/crop-modeling.png",
   },
   {
     id: 3,
-    title: "API Integration",
-    description:
-      "Seamless integration for smooth data sharing and functionality.",
-    icon: "/images/s3.png",
+    title: "Experimental Design",
+    description: "Designing advanced experiments tailored to specific research needs.",
+    icon: "/images/experimental-design.png",
   },
   {
     id: 4,
-    title: "User Interfaces",
-    description:
-      "Engaging, responsive front-end designs for better user experiences.",
-    icon: "/images/s4.png",
+    title: "Data Management and Analysis",
+    description: "Managing and analyzing crop breeding trials data effectively.",
+    icon: "/images/data-management.png",
   },
   {
     id: 5,
-    title: "Database Solutions",
-    description:
-      "Efficient and scalable database management for your data needs.",
-    icon: "/images/s5.png",
+    title: "Training and Capacity Building",
+    description: "Providing training on statistical methods and software for researchers.",
+    icon: "/images/training.png",
   },
   {
     id: 6,
-    title: "Real-Time Features",
-    description: "Add live chat, notifications, and real-time data updates.",
-    icon: "/images/s6.png",
+    title: "Research Proposal Development",
+    description: "Supporting the development of methodologically sound research proposals.",
+    icon: "/images/research-proposal.png",
   },
   {
     id: 7,
-    title: "Speed Optimization",
-    description: "Boost performance with faster load times and optimization.",
-    icon: "/images/s7.png",
-  },
-  {
-    id: 8,
-    title: "Website Management",
-    description: "Easy content management systems with flexible controls.",
-    icon: "/images/s8.png",
+    title: "Publication and Reporting",
+    description: "Assisting in writing technical publications and reports for clear communication.",
+    icon: "/images/publication.png",
   },
 ];
 
