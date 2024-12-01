@@ -23,7 +23,7 @@ export const NavLinks=[
     {
         id:5,
         url:'#',
-        label:'Articles/Reviews',
+        label:'Articles',
     },
     {
         id:6,
