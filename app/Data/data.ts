@@ -7,8 +7,8 @@ export const BaseInfo = {
 };
 
 export const aboutInfo = {
-  title: "Advancing Agricultural Research with Dedication",  
-  description:"I am a dedicated researcher in Addis Ababa, Ethiopia, with a Master’s in Biostatistics from Jimma University. My focus is on improving agricultural research through advanced statistical models and data analysis. With over ten years of experience, I have led projects in crop modeling, experimental design, and data management. I am committed to training future researchers, contributing to the growth of agricultural science in Ethiopia.",  
+  title: "Advancing Agricultural Research with Dedication",
+  description: "I am a dedicated researcher in Addis Ababa, Ethiopia, with a Master’s in Biostatistics from Jimma University. My focus is on improving agricultural research through advanced statistical models and data analysis. With over ten years of experience, I have led projects in crop modeling, experimental design, and data management. I am committed to training future researchers, contributing to the growth of agricultural science in Ethiopia.",
   position: "+",
   experience: "3+",
   project: "200+",
@@ -209,39 +209,85 @@ export const skillsData = [
   },
 ];
 
-export const clientReviews = [
+export const referenceData = [
   {
-    name: "John Doe",
-    review:
-      "Exceptional service! The team delivered exactly what we needed on time. Very professional",
-    rating: 5,
-    profession: "Marketing Manager",
-    image: "/images/u1.jpg",
+    name: "Dr. Ermias Betemariam",
+    profession: "Land Health Scientist",
+    phone: '+252 705485092',
+    description: "Adjunct Assistant Professor of Natural Resource and Computational Sciences, Addis Ababa University",
+    email: 'e.betemariam@cifor-icraf.org',
+    image: "/images/r1.jpg",
   },
   {
-    name: "Jane Smith",
-    review:
-      "Highly skilled developers who understand the client's vision and execute perfectly.",
-    rating: 4.8,
-    profession: "Business Owner",
-    image: "/images/u2.jpg",
+    name: "Dr.Berhanu Amsalu",
+    profession: "Senior Researcher",
+    phone: '+251 911 378930',
+    description: "Coordinator, National Lowland Pulse Research Program Ethiopian Institute of Agricultural Research",
+    email: 'berhanua.fenta@gmail.com',
+    image: "/images/r1.jpg",
   },
   {
-    name: "Michael Johnson",
-    review:
-      "Great communication and excellent results. Our new site performs beautifully.",
-    rating: 4.6,
-    profession: "Project Coordinator",
-    image: "/images/u3.jpg",
+    name: "Dr. Girma Mamo",
+    profession: "Senior Researcher",
+    phone: '+251 911809500',
+    description: "Director, Climate, Geospatial and Biometrics Research Directorate(CGBRD) Ethiopian Institute of Agricultural Research",
+    email: 'mamogirma2018@gmail.com',
+    image: "/images/r1.jpg",
   },
   {
-    name: "Emily Brown",
-    review:
-      "Professional, efficient, and highly knowledgeable. Would definitely recommend their services!",
-    rating: 4.9,
-    profession: "Creative Director",
-    image: "/images/u4.jpg",
+    name: "Dr.Girma Taye ",
+    profession:"Associate Professor of Biostatistics",
+    phone: '++251 91 176 9926',
+    description: "Associate Professor of Biostatistics, School of Public Addis Ababa University",
+    email: 'girmataye2009@gmail.com',
+    image: "/images/r1.jpg",
   },
+];
+
+
+const certificateData= [
+  {
+    id:1,
+    title: "Enhance Use of Climate Services for Agricultural Research and Development: Navigation and Use of ENACT Maproom",
+    date: "February 17-21, 2020",
+    location: "EIAR, Ethiopia",
+    icon:""
+  },
+  {
+    id:2,
+    title: "Participated as Trainer on a Three Days R for A Biologist Training Workshop",
+    date: "November 16-18, 2020",
+    location: "EBTi/Ethiopia",
+    icon:""
+  },
+  {
+    id:3,
+    title: "Manage Soil and Agronomy Data Portal",
+    date: "November 2-4, 2020",
+    location: "EIAR, Ethiopia",
+    icon:""
+  },
+  {
+    id:4,
+    title: "Participated as Trainer on Basic Statistic and Computing Software",
+    date: "January 18-19, 2018",
+    location: "Yabello Pastoral and Dry Land Agricultural Research Center/Ethiopia",
+    icon:""
+  },
+  {
+    id:5,
+    title: "Panel Data Modeling and Impact Evaluation Methods Using STATA",
+    date: "June 14-23, 2017",
+    location: "EIAR, Ethiopia",
+    icon:""
+  },
+  {
+    id:6,
+    title: "Introduction to Geographical Information System (GIS)",
+    date: "March 18-22, 2013",
+    location: "Jimma University, Ethiopia",
+    icon:""
+  }
 ];
 
 export const blogs = [

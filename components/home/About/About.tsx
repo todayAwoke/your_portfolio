@@ -151,44 +151,44 @@ const About = () => {
             </div>
             <div className='grid grid-cols-1 md:mx-auto px-6'>
               <div>
-                <div className="flex gap-5 items-center">
-                  <h2 className="font-semibold text-white">PHP</h2>
+                <div className="flex gap-24 items-center">
+                  <h2 className="font-semibold text-white">R</h2>
                   <span className="w-[45%] h-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
-                  <p className="text-gray-500">Basic</p>
+                  <p className="text-gray-500">Advanced</p>
                 </div>
 
                 <div className="flex gap-5 items-center ">
-                  <h2 className="font-semibold text-white">PHP</h2>
+                  <h2 className="font-semibold text-white">ASRcml-R</h2>
                   <span className="w-[45%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
                   <p className="text-gray-500">Basic</p>
                 </div>
                 <div className="flex gap-5 items-center ">
-                  <h2 className="font-semibold text-white">PHP</h2>
+                  <h2 className="font-semibold text-white">SAS</h2>
                   <span className="w-[45%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
                   <p className="text-gray-500">Basic</p>
                 </div>
                 <div className="flex gap-5 items-center ">
-                  <h2 className="font-semibold text-white">PHP</h2>
+                  <h2 className="font-semibold text-white">SPSS</h2>
                   <span className="w-[45%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
                   <p className="text-gray-500">Basic</p>
                 </div>
                 <div className="flex gap-5 items-center ">
-                  <h2 className="font-semibold text-white">PHP</h2>
+                  <h2 className="font-semibold text-white">STATA</h2>
                   <span className="w-[45%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
                   <p className="text-gray-500">Basic</p>
                 </div>
                 <div className="flex gap-5 items-center ">
-                  <h2 className="font-semibold text-white">PHP</h2>
+                  <h2 className="font-semibold text-white">LaTcx</h2>
                   <span className="w-[45%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
                   <p className="text-gray-500">Basic</p>
                 </div>
                 <div className="flex gap-5 items-center ">
-                  <h2 className="font-semibold text-white">PHP</h2>
+                  <h2 className="font-semibold text-white">Genstat</h2>
                   <span className="w-[45%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
                   <p className="text-gray-500">Basic</p>
                 </div>
                 <div className="flex gap-5 items-center ">
-                  <h2 className="font-semibold text-white">PHP</h2>
+                  <h2 className="font-semibold text-white">Python</h2>
                   <span className="w-[45%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
                   <p className="text-gray-500">Basic</p>
                 </div>
