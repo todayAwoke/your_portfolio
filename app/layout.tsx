@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import {Sora} from 'next/font/google'
 import ResponsiveNav from "@/components/home/Navbar/ResponsiveNav";
+import Footer from "@/components/home/Footer/Footer";
 const font= Sora({
   weight: ['100','200','300','400','500','600','700','800'],
   subsets:['latin']
@@ -30,6 +31,7 @@ export default function RootLayout({
       >
         <ResponsiveNav/>
         {children}
+        <Footer/>
       </body>
     </html>
   );

@@ -7,7 +7,7 @@ import { FaCableCar, FaLocationDot } from 'react-icons/fa6'
 
 const About = () => {
   return (
-    <div className='pt-16 pb-16 bg-[#050709]'>
+    <div className='pt-16 pb-16 bg-gray-800'>
       {/* section heading */}
       <SectionHeading>About Me</SectionHeading>
       <div className='w-[80%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mt-20 '>
@@ -125,7 +125,7 @@ const About = () => {
               />
               <p className='absolute text-[#8750f7] opacity-0 hover:opacity-85 top-16 left-10 text:xl sm:text-2xl '>Ethiopian Institute of Agricultural Research</p>
               <p className='mt-3 sm:font-bold  sm:text-xl   text-white px-7 mb-2'>Researcher I</p>
-              <button className='py-2 text-base sm:text-lg text-gray-100 rounded-lg mx-6  px-7 bg-blue-900 '>
+              <button className='py-2 text-base sm:text-lg text-gray-100 rounded-lg mx-6  px-7 bg-blue-900 hover:bg-blue-700 '>
                 Read More...
               </button>
             </div>
@@ -140,7 +140,7 @@ const About = () => {
 
               <p className='absolute text-[#8750f7] top-16 left-10 text:xl sm:text-2xl'>Jimma Agricultural Research Center</p>
               <p className='mt-3 sm:font-bold sm:text-xl text-white px-4 mb-2'>Assistant Researcher</p>
-              <button className='py-2 text-base sm:text-lg text-gray-100 rounded-lg  px-6 mx-6 bg-blue-900 '>
+              <button className='py-2 text-base sm:text-lg text-gray-100 rounded-lg  px-6 mx-6 bg-blue-900 hover:bg-blue-700 '>
                 Read More...
               </button>
             </div>
@@ -160,24 +160,24 @@ const About = () => {
                 <div className="flex gap-5 items-center ">
                   <h2 className="font-semibold text-white">ASRcml-R</h2>
                   <span className="w-[45%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
-                  <p className="text-gray-500">Basic</p>
+                  <p className="text-gray-500">Advanced</p>
                 </div>
                 <div className="flex gap-5 items-center ">
                   <h2 className="font-semibold text-white">SAS</h2>
                   <span className="w-[45%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
-                  <p className="text-gray-500">Basic</p>
+                  <p className="text-gray-500">Advanced</p>
                 </div>
                 <div className="flex gap-5 items-center ">
                   <h2 className="font-semibold text-white">SPSS</h2>
                   <span className="w-[45%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
-                  <p className="text-gray-500">Basic</p>
+                  <p className="text-gray-500">Advanced</p>
                 </div>
                 <div className="flex gap-5 items-center ">
                   <h2 className="font-semibold text-white">STATA</h2>
                   <span className="w-[45%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
-                  <p className="text-gray-500">Basic</p>
+                  <p className="text-gray-500">Advanced</p>
                 </div>
-                <div className="flex gap-5 items-center ">
+                <div className="flex gap-8 items-center ">
                   <h2 className="font-semibold text-white">LaTcx</h2>
                   <span className="w-[45%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
                   <p className="text-gray-500">Basic</p>

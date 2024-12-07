@@ -245,80 +245,80 @@ export const referenceData = [
 ];
 
 
-const certificateData= [
-  {
-    id:1,
-    title: "Enhance Use of Climate Services for Agricultural Research and Development: Navigation and Use of ENACT Maproom",
-    date: "February 17-21, 2020",
-    location: "EIAR, Ethiopia",
-    icon:""
-  },
-  {
-    id:2,
-    title: "Participated as Trainer on a Three Days R for A Biologist Training Workshop",
-    date: "November 16-18, 2020",
-    location: "EBTi/Ethiopia",
-    icon:""
-  },
-  {
-    id:3,
-    title: "Manage Soil and Agronomy Data Portal",
-    date: "November 2-4, 2020",
-    location: "EIAR, Ethiopia",
-    icon:""
-  },
-  {
-    id:4,
-    title: "Participated as Trainer on Basic Statistic and Computing Software",
-    date: "January 18-19, 2018",
-    location: "Yabello Pastoral and Dry Land Agricultural Research Center/Ethiopia",
-    icon:""
-  },
-  {
-    id:5,
-    title: "Panel Data Modeling and Impact Evaluation Methods Using STATA",
-    date: "June 14-23, 2017",
-    location: "EIAR, Ethiopia",
-    icon:""
-  },
-  {
-    id:6,
-    title: "Introduction to Geographical Information System (GIS)",
-    date: "March 18-22, 2013",
-    location: "Jimma University, Ethiopia",
-    icon:""
-  }
-];
+// const certificateData= [
+//   {
+//     id:1,
+//     title: "Enhance Use of Climate Services for Agricultural Research and Development: Navigation and Use of ENACT Maproom",
+//     date: "February 17-21, 2020",
+//     location: "EIAR, Ethiopia",
+//     icon:""
+//   },
+//   {
+//     id:2,
+//     title: "Participated as Trainer on a Three Days R for A Biologist Training Workshop",
+//     date: "November 16-18, 2020",
+//     location: "EBTi/Ethiopia",
+//     icon:""
+//   },
+//   {
+//     id:3,
+//     title: "Manage Soil and Agronomy Data Portal",
+//     date: "November 2-4, 2020",
+//     location: "EIAR, Ethiopia",
+//     icon:""
+//   },
+//   {
+//     id:4,
+//     title: "Participated as Trainer on Basic Statistic and Computing Software",
+//     date: "January 18-19, 2018",
+//     location: "Yabello Pastoral and Dry Land Agricultural Research Center/Ethiopia",
+//     icon:""
+//   },
+//   {
+//     id:5,
+//     title: "Panel Data Modeling and Impact Evaluation Methods Using STATA",
+//     date: "June 14-23, 2017",
+//     location: "EIAR, Ethiopia",
+//     icon:""
+//   },
+//   {
+//     id:6,
+//     title: "Introduction to Geographical Information System (GIS)",
+//     date: "March 18-22, 2013",
+//     location: "Jimma University, Ethiopia",
+//     icon:""
+//   }
+// ];
 
-export const blogs = [
-  {
-    id: 1,
-    title: "Top Web Development Trends to Watch in 2024",
-    summary:
-      "Explore the key web development trends for 2024 and their impact on your business.",
-    date: "August 18, 2024",
-    image: "/images/b1.jpg",
-  },
-  {
-    id: 2,
-    title: "Why Your Business Needs a Custom Web Application",
-    summary:
-      "Discover why custom web applications are crucial for driving business growth and efficiency.",
-    date: "August 10, 2024",
-    image: "/images/b2.jpg",
-  },
-  {
-    id: 3,
-    title: "The Importance of Website Speed Optimization",
-    summary:
-      "Understand how website speed impacts user experience and learn essential optimization tips.",
-    date: "July 25, 2024",
-    image: "/images/b3.jpg",
-  },
-];
+// export const blogs = [
+//   {
+//     id: 1,
+//     title: "Top Web Development Trends to Watch in 2024",
+//     summary:
+//       "Explore the key web development trends for 2024 and their impact on your business.",
+//     date: "August 18, 2024",
+//     image: "/images/b1.jpg",
+//   },
+//   {
+//     id: 2,
+//     title: "Why Your Business Needs a Custom Web Application",
+//     summary:
+//       "Discover why custom web applications are crucial for driving business growth and efficiency.",
+//     date: "August 10, 2024",
+//     image: "/images/b2.jpg",
+//   },
+//   {
+//     id: 3,
+//     title: "The Importance of Website Speed Optimization",
+//     summary:
+//       "Understand how website speed impacts user experience and learn essential optimization tips.",
+//     date: "July 25, 2024",
+//     image: "/images/b3.jpg",
+//   },
+// ];
 
 export const contactData = {
-  phone: "+88(012345 789)",
-  email: "example@gmail.com",
-  address: "Dhaka , Bangladesh",
+  phone: "+251(968607908)",
+  email: "tare.aragaw@gmail.com",
+  address: "Addis Ababa, Ethiopia",
 };
