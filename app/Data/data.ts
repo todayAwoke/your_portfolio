@@ -15,56 +15,12 @@ export const aboutInfo = {
   website: "100+",
 };
 
-// export const projectData = [
-//   {
-//     id: 1,
-//     title: "Statistical Analysis and Modeling",
-//     description: "Enhancing MET data analysis using advanced statistical models.",
-//     icon: "/images/pr1.jfif",
-//   },
-//   {
-//     id: 2,
-//     title: "Crop Growth Modeling",
-//     description: "Expertise in optimizing crop breeding strategies through accurate predictions.",
-//     icon: "/images/crop-modeling.png",
-//   },
-//   {
-//     id: 3,
-//     title: "Experimental Design",
-//     description: "Designing advanced experiments tailored to specific research needs.",
-//     icon: "/images/experimental-design.png",
-//   },
-//   {
-//     id: 4,
-//     title: "Data Management and Analysis",
-//     description: "Managing and analyzing crop breeding trials data effectively.",
-//     icon: "/images/data-management.png",
-//   },
-//   {
-//     id: 5,
-//     title: "Training and Capacity Building",
-//     description: "Providing training on statistical methods and software for researchers.",
-//     icon: "/images/training.png",
-//   },
-//   {
-//     id: 6,
-//     title: "Research Proposal Development",
-//     description: "Supporting the development of methodologically sound research proposals.",
-//     icon: "/images/research-proposal.png",
-//   },
-//   {
-//     id: 7,
-//     title: "Publication and Reporting",
-//     description: "Assisting in writing technical publications and reports for clear communication.",
-//     icon: "/images/publication.png",
-//   },
-// ];
 export const projectData = [
   {
     id: 1,
     title: "Modernizing Ethiopian Research Crop Improvement",
     description: "Modernizing research methodologies to enhance crop improvement in Ethiopia.",
-    icon: "/images/pr1.jfif", // Update icon as needed
+    icon: "/images/pr1.jfif", 
   },
   {
     id: 2,
@@ -245,77 +201,6 @@ export const referenceData = [
 ];
 
 
-// const certificateData= [
-//   {
-//     id:1,
-//     title: "Enhance Use of Climate Services for Agricultural Research and Development: Navigation and Use of ENACT Maproom",
-//     date: "February 17-21, 2020",
-//     location: "EIAR, Ethiopia",
-//     icon:""
-//   },
-//   {
-//     id:2,
-//     title: "Participated as Trainer on a Three Days R for A Biologist Training Workshop",
-//     date: "November 16-18, 2020",
-//     location: "EBTi/Ethiopia",
-//     icon:""
-//   },
-//   {
-//     id:3,
-//     title: "Manage Soil and Agronomy Data Portal",
-//     date: "November 2-4, 2020",
-//     location: "EIAR, Ethiopia",
-//     icon:""
-//   },
-//   {
-//     id:4,
-//     title: "Participated as Trainer on Basic Statistic and Computing Software",
-//     date: "January 18-19, 2018",
-//     location: "Yabello Pastoral and Dry Land Agricultural Research Center/Ethiopia",
-//     icon:""
-//   },
-//   {
-//     id:5,
-//     title: "Panel Data Modeling and Impact Evaluation Methods Using STATA",
-//     date: "June 14-23, 2017",
-//     location: "EIAR, Ethiopia",
-//     icon:""
-//   },
-//   {
-//     id:6,
-//     title: "Introduction to Geographical Information System (GIS)",
-//     date: "March 18-22, 2013",
-//     location: "Jimma University, Ethiopia",
-//     icon:""
-//   }
-// ];
-
-// export const blogs = [
-//   {
-//     id: 1,
-//     title: "Top Web Development Trends to Watch in 2024",
-//     summary:
-//       "Explore the key web development trends for 2024 and their impact on your business.",
-//     date: "August 18, 2024",
-//     image: "/images/b1.jpg",
-//   },
-//   {
-//     id: 2,
-//     title: "Why Your Business Needs a Custom Web Application",
-//     summary:
-//       "Discover why custom web applications are crucial for driving business growth and efficiency.",
-//     date: "August 10, 2024",
-//     image: "/images/b2.jpg",
-//   },
-//   {
-//     id: 3,
-//     title: "The Importance of Website Speed Optimization",
-//     summary:
-//       "Understand how website speed impacts user experience and learn essential optimization tips.",
-//     date: "July 25, 2024",
-//     image: "/images/b3.jpg",
-//   },
-// ];
 
 export const contactData = {
   phone: "+251(968607908)",
