@@ -10,9 +10,9 @@ const About = () => {
     <div className='pt-16 pb-16 bg-gray-800'>
       {/* section heading */}
       <SectionHeading>About Me</SectionHeading>
-      <div className='w-[80%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mt-20 '>
+      <div  className='w-[80%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mt-20 '>
         {/* text contet */}
-        <div>
+        <div data-aos="fade-left" data-aos-anchor-placement="top-center">
           <h1 className='text-bg text-[24px] sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-200'>
             {aboutInfo.title}
           </h1>
@@ -110,7 +110,7 @@ const About = () => {
         </div>
         {/* left part of the page */}
 
-        <div className=''>
+        <div data-aos="zoom-in" data-aos-anchor-placement="top-center" data-aos-delay="100" className=''>
           <div className='text-center' >
             <h1 className='text-white mb-14 text-[24px] sm:text-3xl md:text-4xl lg:text-5xl items-center justify-center px-9 text-bg font-bold'>Experience </h1>
           </div>
@@ -145,7 +145,7 @@ const About = () => {
               </button>
             </div>
           </div>
-          <div className='px-1 mt-16'>
+          <div  className='px-1 mt-16'>
             <div className='text-center' >
               <h1 className='text-white mb-14 text-[24px] sm:text-3xl md:text-4xl lg:text-5xl items-center justify-center px-9 text-bg font-bold'>Programming Skills </h1>
             </div>
@@ -215,20 +215,14 @@ const About = () => {
                     <FaCableCar className='text-yellow-600' size={24} />
                     <p>2014-2016</p>
                   </div>
-                  <div className='flex gap-2 items-center justify-center'>
-                    <FaLocationDot className='text-blue-800' size={24} />
-                    <p>Ethiopia</p>
-                  </div>
+                 
                 </div>
                 <div className='flex gap-10 mt-3'>
                   <div className='flex gap-2 items-center justify-center'>
                     <FaVoicemail className='text-yellow-600' size={24} />
                     <p>ero@ju.edu.et</p>
                   </div>
-                  <div className='flex gap-2 items-center justify-center'>
-                    <FaMailBulk className='text-blue-800' size={24} />
-                    <p>307</p>
-                  </div>
+               
                 </div>
               </div>
               <div className='text-white'>
@@ -246,10 +240,10 @@ const About = () => {
                     <FaCableCar className='text-yellow-600' size={24} />
                     <p>2009-2011</p>
                   </div>
-                  <div className='flex gap-2 items-center justify-center'>
+                  {/* <div className='flex gap-2 items-center justify-center'>
                     <FaLocationDot className='text-blue-800' size={24} />
                     <p>Ethiopia</p>
-                  </div>
+                  </div> */}
                 </div>
 
                 <div className='flex gap-5 sm:gap-7 mt-3'>
@@ -257,10 +251,10 @@ const About = () => {
                     <FaVoicemail className='text-yellow-600' size={24} />
                     <p>infolib@lib.aau.edu.et</p>
                   </div>
-                  <div className='flex gap-1 sm:gap-2 items-center justify-center'>
+                  {/* <div className='flex gap-1 sm:gap-2 items-center justify-center'>
                     <FaMailBulk className='text-blue-800' size={24} />
                     <p>1176</p>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>

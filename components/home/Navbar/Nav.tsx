@@ -35,7 +35,7 @@ const Nav = ({openNav}:Props) => {
   src='/images/logo.png' 
   width={50} 
   height={50} 
-  className='rounded-full w-[10vw] h-[10vw] sm:w-[7vw] sm:h-[7vw] md:w-[5vw] md:h-[5vw] p-1' 
+  className='rounded-full w-[10vw] h-[10vw] cursor-pointer sm:w-[7vw] sm:h-[7vw] md:w-[5vw] md:h-[5vw] p-1' 
 />
 
                 <div className='flex items-center space-x-10 '>

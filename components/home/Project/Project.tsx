@@ -8,8 +8,11 @@ const Services = () => {
         <div className='pt-16 pb-16 bg-gray-800'>
             <SectionHeading>My Projecs</SectionHeading>
             <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10  w-[80%] mx-auto items-center mt-20' >
-                {projectData.map((project) => {
-                    return <div key={project.id}>
+                {projectData.map((project,i) => {
+                    return <div data-aos="fade-left"
+                    data-aos-anchor-placement="top-center"
+                    data-aos-delay={`${i*100}`}
+                     key={project.id}>
                         <ProjectCard project={project} />
                     </div>
                 })}

@@ -1,13 +1,16 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import {Sora} from 'next/font/google'
+import { Sora } from 'next/font/google';
 import ResponsiveNav from "@/components/home/Navbar/ResponsiveNav";
 import Footer from "@/components/home/Footer/Footer";
-const font= Sora({
+import ScrollToTop from "@/components/helper/ScrollToTop";
+
+const font = Sora({
   weight: ['100','200','300','400','500','600','700','800'],
-  subsets:['latin']
+  subsets: ['latin']
 });
+
 const geistMono = localFont({
   src: "./fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
@@ -25,13 +28,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${font.className} ${geistMono.variable} antialiased`}
-      >
-        <ResponsiveNav/>
+    <html lang="en" className="custom_scrollbar">
+      <body className={`${font.className} ${geistMono.variable} antialiased`}>
+        <ResponsiveNav />
         {children}
-        <Footer/>
+        <Footer />
+        <ScrollToTop />
       </body>
     </html>
   );

@@ -12,7 +12,9 @@ const Contact = () => {
             </div>
             {/*  */}
             <div className='  grid grid-cols-1 md:grid-cols-2 w-[90%] sm:w-[80%] mx-auto items-center gap-10 mt-10 '>
-                <div >
+                <div  data-aos="fade-right" data-aos-anchor-placement="top-center"
+                data-aos-delay="100"
+                     >
                     <ContactForm />
                 </div>
                 <div className='xl:mx-auto px-10'><ContactInfo /></div>
