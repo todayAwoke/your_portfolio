@@ -10,7 +10,7 @@ const About = () => {
     <div className='pt-16 pb-16 bg-gray-800'>
       {/* section heading */}
       <SectionHeading>About Me</SectionHeading>
-      <div  className='w-[80%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mt-20 '>
+      <div className='w-[80%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mt-20 '>
         {/* text contet */}
         <div data-aos="fade-left" data-aos-anchor-placement="top-center">
           <h1 className='text-bg text-[24px] sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-200'>
@@ -145,52 +145,51 @@ const About = () => {
               </button>
             </div>
           </div>
-          <div  className='px-1 mt-16'>
+          <div className='px-1 mt-16'>
             <div className='text-center' >
               <h1 className='text-white mb-14 text-[24px] sm:text-3xl md:text-4xl lg:text-5xl items-center justify-center px-9 text-bg font-bold'>Programming Skills </h1>
             </div>
             <div className='grid grid-cols-1 md:mx-auto px-6'>
               <div>
-                <div className="flex gap-24 items-center">
-                  <h2 className="font-semibold text-white">R</h2>
-                  <span className="w-[45%] h-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
-                  <p className="text-gray-500">Advanced</p>
+                <div className="mb-3 bg-blue-700 h-5 rounded-full flex gap-6">
+                  <h2 className="bg-teal-500 w-[100%] text-sm h-full justify-center items-center flex text-white">100%</h2>
+                  <p className='text-white mb-2'>R</p>
                 </div>
-
-                <div className="flex gap-5 items-center ">
-                  <h2 className="font-semibold text-white">ASRcml-R</h2>
-                  <span className="w-[45%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
-                  <p className="text-gray-500">Advanced</p>
+                <div className="mb-3 bg-blue-700 h-5 rounded-full flex gap-6">
+                  <h2 className="bg-teal-500 w-[100%] text-sm h-full justify-center items-center flex text-white">100%</h2>
+                  <p className='text-white mb-2'>ASReml-R</p>
                 </div>
-                <div className="flex gap-5 items-center ">
-                  <h2 className="font-semibold text-white">SAS</h2>
-                  <span className="w-[45%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
-                  <p className="text-gray-500">Advanced</p>
+                <div className="mb-3 bg-blue-700 h-5 rounded-full flex gap-6">
+                  <h2 className="bg-teal-500 w-[100%] text-sm h-full justify-center items-center flex text-white">100%</h2>
+                  <p className='text-white mb-2'>SAP</p>
                 </div>
-                <div className="flex gap-5 items-center ">
-                  <h2 className="font-semibold text-white">SPSS</h2>
-                  <span className="w-[45%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
-                  <p className="text-gray-500">Advanced</p>
+                <div className="mb-3 bg-blue-700 h-5 rounded-full flex gap-6">
+                  <h2 className="bg-teal-500 w-[100%] text-sm h-full justify-center items-center flex text-white">100%</h2>
+                  <p className='text-white mb-2'>SPSS</p>
                 </div>
-                <div className="flex gap-5 items-center ">
-                  <h2 className="font-semibold text-white">STATA</h2>
-                  <span className="w-[45%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
-                  <p className="text-gray-500">Advanced</p>
+                <div className="mb-3 bg-blue-700 h-5 rounded-full flex gap-6">
+                  <h2 className="bg-purple-500 w-[90%] text-sm h-full justify-center items-center flex text-white">90%</h2>
+                  <p className='text-white mb-2'>STATA</p>
                 </div>
-                <div className="flex gap-8 items-center ">
-                  <h2 className="font-semibold text-white">LaTcx</h2>
-                  <span className="w-[45%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
-                  <p className="text-gray-500">Basic</p>
+                <div className="mb-3 bg-blue-700 h-5 rounded-full flex gap-6">
+                  <h2 className="bg-purple-500 w-[90%] text-sm h-full justify-center items-center flex text-white">90%</h2>
+                  <p className='text-white mb-2'>LaTex</p>
                 </div>
-                <div className="flex gap-5 items-center ">
-                  <h2 className="font-semibold text-white">Genstat</h2>
-                  <span className="w-[45%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
-                  <p className="text-gray-500">Basic</p>
+                <div className="mb-3 bg-blue-700 h-5 rounded-full flex gap-6">
+                  <h2 className="bg-purple-500 w-[90%] text-sm h-full justify-center items-center flex text-white">90%</h2>
+                  <p className='text-white mb-2'>Genstat</p>
                 </div>
-                <div className="flex gap-5 items-center ">
-                  <h2 className="font-semibold text-white">Python</h2>
-                  <span className="w-[45%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
-                  <p className="text-gray-500">Basic</p>
+                <div className="mb-3 bg-blue-700 h-5 rounded-full flex gap-6">
+                  <h2 className="bg-purple-500 w-[80%] text-sm h-full justify-center items-center flex text-white">80%</h2>
+                  <p className='text-white mb-2'>Python</p>
+                </div>
+                <div className="mb-3 bg-blue-700 h-5 rounded-full flex gap-6">
+                  <h2 className="bg-yellow-500 w-[60%] text-sm h-full justify-center items-center flex text-white">60%</h2>
+                  <p className='text-white mb-2'>AcrGIS</p>
+                </div>
+                <div className="mb-3 bg-blue-700 h-5 rounded-full flex gap-6">
+                  <h2 className="bg-teal-500 w-[95%] text-sm h-full justify-center items-center flex text-white">95%</h2>
+                  <p className='text-white mb-2'>Minitab</p>
                 </div>
               </div>
             </div>
@@ -215,14 +214,14 @@ const About = () => {
                     <FaCableCar className='text-yellow-600' size={24} />
                     <p>2014-2016</p>
                   </div>
-                 
+
                 </div>
                 <div className='flex gap-10 mt-3'>
                   <div className='flex gap-2 items-center justify-center'>
                     <FaVoicemail className='text-yellow-600' size={24} />
                     <p>ero@ju.edu.et</p>
                   </div>
-               
+
                 </div>
               </div>
               <div className='text-white'>
@@ -240,21 +239,12 @@ const About = () => {
                     <FaCableCar className='text-yellow-600' size={24} />
                     <p>2009-2011</p>
                   </div>
-                  {/* <div className='flex gap-2 items-center justify-center'>
-                    <FaLocationDot className='text-blue-800' size={24} />
-                    <p>Ethiopia</p>
-                  </div> */}
                 </div>
-
                 <div className='flex gap-5 sm:gap-7 mt-3'>
                   <div className='flex gap-2 items-center justify-center'>
                     <FaVoicemail className='text-yellow-600' size={24} />
                     <p>infolib@lib.aau.edu.et</p>
                   </div>
-                  {/* <div className='flex gap-1 sm:gap-2 items-center justify-center'>
-                    <FaMailBulk className='text-blue-800' size={24} />
-                    <p>1176</p>
-                  </div> */}
                 </div>
               </div>
             </div>
@@ -263,15 +253,13 @@ const About = () => {
                 <h1 className='text-white mb-14 text-[24px] sm:text-3xl md:text-4xl lg:text-5xl items-center justify-center px-9 text-bg font-bold'>Languages </h1>
               </div>
               <div className='items-center justify-center  px-10 mx-5'>
-              <div className="flex gap-5 items-center ">
-                  <h2 className="font-semibold text-white">PHP</h2>
-                  <span className="w-[45%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
-                  <p className="text-gray-500">Basic</p>
+                <div className="mb-3 bg-blue-700 h-5 rounded-full flex gap-6">
+                  <h2 className="bg-teal-500 w-[100%] text-sm h-full justify-center items-center flex text-white">100%</h2>
+                  <p className='text-white mb-2'>Amharic</p>
                 </div>
-                <div className="flex gap-5 items-center ">
-                  <h2 className="font-semibold text-white">PHP</h2>
-                  <span className="w-[45%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
-                  <p className="text-gray-500">Basic</p>
+                <div className="mb-3 bg-blue-700 h-5 rounded-full flex gap-6">
+                  <h2 className="bg-teal-500 w-[100%] text-sm h-full justify-center items-center flex text-white">100%</h2>
+                  <p className='text-white mb-2'>English</p>
                 </div>
               </div>
             </div>

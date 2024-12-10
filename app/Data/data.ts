@@ -164,7 +164,16 @@ export const skillsData = [
     percent: "35%",
   },
 ];
+ export const blogs=[
+  {
+    id:1,
+    title:"this is ",
+    summary:"the summary",
+    date:'December 10 2024',
+    image:'/images/b1'
 
+  }
+ ];
 export const referenceData = [
   {
     name: "Dr. Ermias Betemariam",

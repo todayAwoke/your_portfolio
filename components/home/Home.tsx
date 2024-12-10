@@ -8,6 +8,7 @@ import Testimonail from './Testimonail/Testimonail';
 import Contact from './Contact/Contact';
 import 'aos/dist/aos.css';
 import AOS from 'aos';
+import Blog from './Blog/Blog';
 
 const Home = () => {
   useEffect(() => {
@@ -26,7 +27,9 @@ const Home = () => {
       <About />
       <Services />
       <Articles />
+      <Blog/>
       <Testimonail />
+      
       <Contact />
     </div>
   );

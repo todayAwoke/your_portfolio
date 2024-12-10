@@ -5,7 +5,6 @@ import { Sora } from 'next/font/google';
 import ResponsiveNav from "@/components/home/Navbar/ResponsiveNav";
 import Footer from "@/components/home/Footer/Footer";
 import ScrollToTop from "@/components/helper/ScrollToTop";
-
 const font = Sora({
   weight: ['100','200','300','400','500','600','700','800'],
   subsets: ['latin']
