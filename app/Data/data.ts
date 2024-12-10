@@ -170,7 +170,23 @@ export const skillsData = [
     title:"this is ",
     summary:"the summary",
     date:'December 10 2024',
-    image:'/images/b1'
+    image:'/images/bl1.jpg'
+
+  },
+  {
+    id:2,
+    title:"this is second ",
+    summary:"the summary",
+    date:'December 10 2024',
+   image:'/images/bl1.jpg'
+
+  },
+  {
+    id:1,
+    title:"this is ",
+    summary:"the summary",
+    date:'December 10 2024',
+   image:'/images/bl1.jpg'
 
   }
  ];
