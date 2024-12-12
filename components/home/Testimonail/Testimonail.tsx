@@ -7,7 +7,7 @@ import Certificate from './Certificate';
 
 const Testimonail = () => {
   return (
-    <div className='pt-16 pb-16 bg-gray-800'>
+    <div className='pt-24 pb-16 bg-gray-800' id='testimonails'>
         <SectionHeading>Testimonails</SectionHeading>
         <div className='w-[90%] sm:w-[80%] mx-auto mt-20'>
         <Reference/>

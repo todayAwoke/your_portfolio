@@ -1,13 +1,20 @@
 import { aboutInfo, BaseInfo } from '@/app/Data/data'
 import SectionHeading from '@/components/helper/SectionHeading'
 import Image from 'next/image'
-import React from 'react'
+import React, { useState } from 'react'
 import { FaCheck, FaGraduationCap, FaMagic, FaMailBulk, FaSchool, FaVoicemail } from 'react-icons/fa'
 import { FaCableCar, FaLocationDot } from 'react-icons/fa6'
-
+const paragraphStyles = {
+  WebkitLineClamp: 1,
+  WebkitBoxOrient: 'vertical',
+  overflow: 'hidden',
+  display: '-webkit-box'
+};
 const About = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen2, setIsOpen2] = useState(false);
   return (
-    <div className='pt-16 pb-16 bg-gray-800'>
+    <div className='pt-28 pb-16 bg-gray-800' id='about'>
       {/* section heading */}
       <SectionHeading>About Me</SectionHeading>
       <div className='w-[80%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mt-20 '>
@@ -124,9 +131,29 @@ const About = () => {
                 className='object-cover cursor-pointer h-56 w-56 sm:h-60 sm:w-80 rounded-md hover:scale-105 transition-all duration-200 mx-5 '
               />
               <p className='absolute text-[#8750f7] opacity-0 hover:opacity-85 top-16 left-10 text:xl sm:text-2xl '>Ethiopian Institute of Agricultural Research</p>
-              <p className='mt-3 sm:font-bold  sm:text-xl   text-white px-7 mb-2'>Researcher I</p>
-              <button className='py-2 text-base sm:text-lg text-gray-100 rounded-lg mx-6  px-7 bg-blue-900 hover:bg-blue-700 '>
-                Read More...
+              <p className='mt-3 sm:font-bold  sm:text-xl   text-white px-7 mb-2'> Reseacher 1</p>
+              <div>
+                <h2 className='text-[#8750f7] sm:text-xl font-semibold'> Ethiopian Institute of Agricultural Research</h2>
+                <div className='items-center flex justify-between text-white gap-5 mb-5'>
+                  <p>Apr 2020-Present</p>
+                  <p>Addis Ababa, Ethiopia</p>
+                </div>
+                <ul className='text-white' style={isOpen ? {} : paragraphStyles}>
+                  <li className='list-disc' >Advanced designs of experiments, conduct P-rep design for early generation and large field trials .</li>
+                  <li className='list-disc'>Conduct spatial,pedigree analysis and crop modeling</li>
+                  <li className='list-disc'>Multi-enviroment trial (MET) data analysis using enhanced statistical models</li>
+                  <li className='list-disc'>Trainig on statistical method and computing software for crop breeder</li>
+                  <li className='list-disc'> Crop breeding trials data management and developments of new research proposals.</li>
+                  <li className='list-disc'>Implementing, follow up and M&E biometrics research projects.</li>
+                  <li className='list-disc'>Lead and manage biometrics research team</li>
+                  <li className='list-disc'>Writing technical publications and reports</li>
+                </ul>
+              </div>
+
+              <button
+                className='py-2 text-base sm:text-lg text-gray-100 rounded-lg mx-6 px-7 bg-blue-900 hover:bg-blue-700'
+                onClick={() => setIsOpen(!isOpen)}>
+                {isOpen ? 'Read Less...' : 'Read More...'}
               </button>
             </div>
             <div className=' relative justify-center'>
@@ -137,11 +164,29 @@ const About = () => {
                 height={500}
                 className='object-cover cursor-pointer h-56 w-56 sm:h-60 sm:w-80 rounded-md mx-5 hover:scale-105'
               />
-
               <p className='absolute text-[#8750f7] top-16 left-10 text:xl sm:text-2xl'>Jimma Agricultural Research Center</p>
               <p className='mt-3 sm:font-bold sm:text-xl text-white px-4 mb-2'>Assistant Researcher</p>
-              <button className='py-2 text-base sm:text-lg text-gray-100 rounded-lg  px-6 mx-6 bg-blue-900 hover:bg-blue-700 '>
-                Read More...
+
+              <div>
+                <h2 className='text-[#8750f7] sm:text-xl font-semibold'>Jimma Agricultural Research Center</h2>
+                <div className='items-center flex justify-between text-white gap-5 mb-5'>
+                  <p>Feb 2013-Apr 2019</p>
+                  <p>Jimma, Ethiopia</p>
+                </div>
+                <ul className='text-white' style={isOpen2 ? null : paragraphStyles}>
+                  <li className='list-disc'> Coordinating Biometry, GIS, and Agro-meteorology team</li>
+                  <li className='list-disc'>Implementing research activities.</li>
+                  <li className='list-disc'>Generating design of experments for field trials.</li>
+                  <li className='list-disc'>Managing crop breeding trials dataset.</li>
+                  <li className='list-disc'>Cunducting data analysis for genotypes selection at each trial stage</li>
+
+                </ul>
+              </div>
+              <button
+                className='py-2 text-base sm:text-lg text-gray-100 rounded-lg mx-6 px-7 bg-blue-900 hover:bg-blue-700'
+                onClick={() => setIsOpen2(!isOpen2)}
+              >
+                {isOpen2 ? 'Read Less...' : 'Read More...'}
               </button>
             </div>
           </div>
@@ -150,46 +195,66 @@ const About = () => {
               <h1 className='text-white mb-14 text-[24px] sm:text-3xl md:text-4xl lg:text-5xl items-center justify-center px-9 text-bg font-bold'>Programming Skills </h1>
             </div>
             <div className='grid grid-cols-1 md:mx-auto px-6'>
-              <div>
-                <div className="mb-3 bg-blue-700 h-5 rounded-full flex gap-6">
-                  <h2 className="bg-teal-500 w-[100%] text-sm h-full justify-center items-center flex text-white">100%</h2>
-                  <p className='text-white mb-2'>R</p>
+              <div >
+                <div className='flex items-center gap-16'>
+                  <p className='text-white text-sm sm:text-base mb-2'>R</p>
+                  <div className="mb-3 bg-blue-700 sm:h-5 h-3 rounded-full flex flex-1 mx-2">
+                    <h2 className="bg-teal-500 w-full h-full flex items-center rounded-3xl justify-center text-sm text-white">100%</h2>
+                  </div>
                 </div>
-                <div className="mb-3 bg-blue-700 h-5 rounded-full flex gap-6">
-                  <h2 className="bg-teal-500 w-[100%] text-sm h-full justify-center items-center flex text-white">100%</h2>
-                  <p className='text-white mb-2'>ASReml-R</p>
+                <div className='flex items-center'>
+                  <p className='text-white text-sm sm:text-base mb-2'>ASReml-R</p>
+                  <div className="mb-3 bg-blue-700 sm:h-5 h-3 rounded-full flex flex-1 mx-2">
+                    <h2 className="bg-teal-500 w-full h-full flex items-center rounded-3xl justify-center text-sm text-white">100%</h2>
+                  </div>
                 </div>
-                <div className="mb-3 bg-blue-700 h-5 rounded-full flex gap-6">
-                  <h2 className="bg-teal-500 w-[100%] text-sm h-full justify-center items-center flex text-white">100%</h2>
-                  <p className='text-white mb-2'>SAP</p>
+                <div className='flex items-center gap-11'>
+                  <p className='text-white text-sm sm:text-base mb-2 '>SAP</p>
+                  <div className="mb-3 bg-blue-700 sm:h-5 h-3 rounded-full flex flex-1 mx-2">
+                    <h2 className="bg-teal-500 w-full h-full flex items-center rounded-3xl justify-center text-sm text-white">100%</h2>
+                  </div>
                 </div>
-                <div className="mb-3 bg-blue-700 h-5 rounded-full flex gap-6">
-                  <h2 className="bg-teal-500 w-[100%] text-sm h-full justify-center items-center flex text-white">100%</h2>
-                  <p className='text-white mb-2'>SPSS</p>
+                <div className='flex items-center gap-8'>
+                  <p className='text-white text-sm sm:text-base mb-2'>SPSS</p>
+                  <div className="mb-3 bg-blue-700 sm:h-5 h-3 rounded-full flex flex-1 mx-2">
+                    <h2 className="bg-teal-500 w-full h-full flex items-center rounded-3xl justify-center text-sm text-white">100%</h2>
+                  </div>
                 </div>
-                <div className="mb-3 bg-blue-700 h-5 rounded-full flex gap-6">
-                  <h2 className="bg-purple-500 w-[90%] text-sm h-full justify-center items-center flex text-white">90%</h2>
-                  <p className='text-white mb-2'>STATA</p>
+                <div className='flex items-center gap-4'>
+                  <p className='text-white text-sm sm:text-base mb-2'>Minitab</p>
+                  <div className="mb-3 bg-blue-700 sm:h-5 h-3 rounded-full flex flex-1 mx-2">
+                    <h2 className="bg-teal-400 w-[95%] h-full flex items-center rounded-3xl justify-center text-sm text-white">95%</h2>
+                  </div>
                 </div>
-                <div className="mb-3 bg-blue-700 h-5 rounded-full flex gap-6">
-                  <h2 className="bg-purple-500 w-[90%] text-sm h-full justify-center items-center flex text-white">90%</h2>
-                  <p className='text-white mb-2'>LaTex</p>
+                <div className='flex items-center gap-7'>
+                  <p className='text-white text-sm sm:text-base mb-2'>STATA</p>
+                  <div className="mb-3 bg-blue-700 sm:h-5 h-3 rounded-full flex flex-1 mx-2">
+                    <h2 className="bg-teal-300 w-[90%]  h-full flex items-center rounded-3xl justify-center text-sm text-white">90%</h2>
+                  </div>
                 </div>
-                <div className="mb-3 bg-blue-700 h-5 rounded-full flex gap-6">
-                  <h2 className="bg-purple-500 w-[90%] text-sm h-full justify-center items-center flex text-white">90%</h2>
-                  <p className='text-white mb-2'>Genstat</p>
+                <div className='flex items-center gap-8'>
+                  <p className='text-white text-sm sm:text-base mb-2'>LaTex</p>
+                  <div className="mb-3 bg-blue-700 sm:h-5 h-3 rounded-full flex flex-1 mx-2">
+                    <h2 className="bg-purple-500 w-[90%]  h-full flex items-center rounded-3xl justify-center text-sm text-white">90%</h2>
+                  </div>
                 </div>
-                <div className="mb-3 bg-blue-700 h-5 rounded-full flex gap-6">
-                  <h2 className="bg-purple-500 w-[80%] text-sm h-full justify-center items-center flex text-white">80%</h2>
-                  <p className='text-white mb-2'>Python</p>
+                <div className='flex items-center gap-3'>
+                  <p className='text-white text-sm sm:text-base mb-2'>Genstat</p>
+                  <div className="mb-3 bg-blue-700 sm:h-5 h-3 rounded-full flex flex-1 mx-2">
+                    <h2 className="bg-purple-500 w-[90%]  h-full flex items-center rounded-3xl justify-center text-sm text-white">90%</h2>
+                  </div>
                 </div>
-                <div className="mb-3 bg-blue-700 h-5 rounded-full flex gap-6">
-                  <h2 className="bg-yellow-500 w-[60%] text-sm h-full justify-center items-center flex text-white">60%</h2>
-                  <p className='text-white mb-2'>AcrGIS</p>
+                <div className='flex items-center gap-5'>
+                  <p className='text-white text-sm sm:text-base mb-2'>Python</p>
+                  <div className="mb-3 bg-blue-700 sm:h-5 h-3 rounded-full flex flex-1 mx-2">
+                    <h2 className="bg-purple-500 w-[80%] h-full flex items-center rounded-3xl justify-center text-sm text-white">80%</h2>
+                  </div>
                 </div>
-                <div className="mb-3 bg-blue-700 h-5 rounded-full flex gap-6">
-                  <h2 className="bg-teal-500 w-[95%] text-sm h-full justify-center items-center flex text-white">95%</h2>
-                  <p className='text-white mb-2'>Minitab</p>
+                <div className='flex items-center gap-5'>
+                  <p className='text-white text-sm sm:text-base mb-2'>AcrGIS</p>
+                  <div className="mb-3 bg-blue-700 sm:h-5 h-3 rounded-full flex flex-1 mx-2">
+                    <h2 className="bg-yellow-500 w-[60%] h-full flex items-center rounded-3xl justify-center text-sm text-white">60%</h2>
+                  </div>
                 </div>
               </div>
             </div>
@@ -253,14 +318,19 @@ const About = () => {
                 <h1 className='text-white mb-14 text-[24px] sm:text-3xl md:text-4xl lg:text-5xl items-center justify-center px-9 text-bg font-bold'>Languages </h1>
               </div>
               <div className='items-center justify-center  px-10 mx-5'>
-                <div className="mb-3 bg-blue-700 h-5 rounded-full flex gap-6">
-                  <h2 className="bg-teal-500 w-[100%] text-sm h-full justify-center items-center flex text-white">100%</h2>
-                  <p className='text-white mb-2'>Amharic</p>
+                <div className='flex items-center gap-6'>
+                  <p className='text-white text-sm sm:text-base mb-2'>English</p>
+                  <div className="mb-3 bg-blue-700 sm:h-5 h-3 rounded-full flex flex-1 mx-2">
+                    <h2 className="bg-teal-500 w-full h-full flex items-center rounded-3xl justify-center text-sm text-white">100%</h2>
+                  </div>
                 </div>
-                <div className="mb-3 bg-blue-700 h-5 rounded-full flex gap-6">
-                  <h2 className="bg-teal-500 w-[100%] text-sm h-full justify-center items-center flex text-white">100%</h2>
-                  <p className='text-white mb-2'>English</p>
+                <div className='flex items-center gap-4'>
+                  <p className='text-white text-sm sm:text-base mb-2'>Amharic</p>
+                  <div className="mb-3 bg-blue-700 sm:h-5 h-3 rounded-full flex flex-1 mx-2">
+                    <h2 className="bg-teal-500 w-full h-full flex items-center rounded-3xl justify-center text-sm text-white">100%</h2>
+                  </div>
                 </div>
+
               </div>
             </div>
           </div>

@@ -6,7 +6,7 @@ import React from 'react'
 
 const Articles = () => {
     return (
-        <div className='pt-16 pb-16 bg-gray-800'>
+        <div className='pt-28 pb-16 bg-gray-800' id='articles'>
             <SectionHeading>Articles</SectionHeading>
             <div className='text-center mt-10'>
                 <h1 className='text-white mb-14 text-[24px] sm:text-3xl md:text-4xl lg:text-5xl items-center justify-center px-9 text-bg font-bold'>Published Articles</h1>
@@ -16,7 +16,7 @@ const Articles = () => {
                     return <div data-aos="flip-left"
                     data-aos-anchor-placement="top-center"
                     data-aos-delay={`${i*100}`} 
-                     key={article.id} className='bg-[#20132b] p-5 rounded-lg hover:scale-105 transition-all duration-300 '>
+                     key={article.id} className='bg-indigo-950 p-5 rounded-lg hover:scale-105 transition-all duration-300 '>
                         <div className='mb-5'>
 
                         <Link href={article.url} target='_blank' >

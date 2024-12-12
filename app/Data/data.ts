@@ -2,7 +2,7 @@ export const BaseInfo = {
   name: "Tarekegn",
   position: "Agricultural Research Professional ",
   description:
-    "Welcome to Tarekegn Argaw's Portfolio - A dedicated researcher specializing in multi-environment trial data analysis, crop growth modeling, and innovative statistical methodologies!",
+    "Welcome to my Portfolio - A dedicated researcher specializing in multi-environment trial data analysis, crop growth modeling, and innovative statistical methodologies!",
   profilePic: "/images/hero.jpg",
 };
 
@@ -20,7 +20,7 @@ export const projectData = [
     id: 1,
     title: "Modernizing Ethiopian Research Crop Improvement",
     description: "Modernizing research methodologies to enhance crop improvement in Ethiopia.",
-    icon: "/images/pr1.jfif", 
+    icon: "/images/pr1.jfif",
   },
   {
     id: 2,
@@ -164,32 +164,35 @@ export const skillsData = [
     percent: "35%",
   },
 ];
- export const blogs=[
+export const blogs = [
   {
-    id:1,
-    title:"this is ",
-    summary:"the summary",
-    date:'December 10 2024',
-    image:'/images/bl1.jpg'
+    id: 1,
+    title: "this is ",
+    summary: "the summary",
+    detail:'I am a dedicated researcher in Addis Ababa, Ethiopia, with a Master’s in Biostatistics from Jimma University. My focus is on improving agricultural research through advanced statistical models and data analysis. With over ten years of experience, I have led projects in crop modeling,',
+    date: 'Sep 10 2024',
+    image: '/images/bl1.jpg'
 
   },
   {
-    id:2,
-    title:"this is second ",
-    summary:"the summary",
-    date:'December 10 2024',
-   image:'/images/bl1.jpg'
+    id: 2,
+    title: "this is second ",
+    summary: "the summary",
+    detail:'I am a dedicated researcher in Addis Ababa, Ethiopia, with a Master’s in Biostatistics from Jimma University. My focus is on improving agricultural research through advanced statistical models and data analysis. With over ten years of experience, I have led projects in crop modeling, ',
+    date: 'Dec 10 2024',
+    image: '/images/bl1.jpg'
 
   },
   {
-    id:1,
-    title:"this is ",
-    summary:"the summary",
-    date:'December 10 2024',
-   image:'/images/bl1.jpg'
+    id: 3,
+    title: "this is ",
+    summary: "the summary",
+    detail:'I am a dedicated researcher in Addis Ababa, Ethiopia, with a Master’s in Biostatistics from Jimma University. My focus is on improving agricultural research through advanced statistical models and data analysis. With over ten years of experience, I have led projects in crop modeling,',
+    date: 'Apr 10 2024',
+    image: '/images/bl1.jpg'
 
   }
- ];
+];
 export const referenceData = [
   {
     name: "Dr. Ermias Betemariam",
@@ -217,7 +220,7 @@ export const referenceData = [
   },
   {
     name: "Dr.Girma Taye ",
-    profession:"Associate Professor of Biostatistics",
+    profession: "Associate Professor of Biostatistics",
     phone: '++251 91 176 9926',
     description: "Associate Professor of Biostatistics, School of Public Addis Ababa University",
     email: 'girmataye2009@gmail.com',

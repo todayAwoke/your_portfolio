@@ -32,7 +32,7 @@ export const ContactForm = () => {
       <form
         ref={form}
         onSubmit={sendEmail}
-        className="bg-gray-900 p-6 rounded-lg shadow-lg w-full max-w-md"
+        className="bg-indigo-950 p-6 rounded-lg shadow-lg w-full max-w-md"
       >
         <h2 className="text-white text-2xl mb-4 text-center">Contact Me</h2>
         

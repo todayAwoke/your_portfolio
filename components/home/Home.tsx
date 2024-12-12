@@ -1,4 +1,4 @@
-'use client';
+'use client'
 import React, { useEffect } from 'react';
 import Hero from './Hero';
 import About from './About/About';
@@ -12,14 +12,13 @@ import Blog from './Blog/Blog';
 
 const Home = () => {
   useEffect(() => {
-    // Initialize AOS
     AOS.init({
       duration: 1000,
       easing: 'ease',
       once: true,
       anchorPlacement: 'top-bottom',
     });
-  }, []); // Empty dependency array ensures this runs once on mount
+  }, []);
 
   return (
     <div className='overflow-hidden'>
@@ -27,11 +26,11 @@ const Home = () => {
       <About />
       <Services />
       <Articles />
-      <Blog/>
+      <Blog />
       <Testimonail />
-      
       <Contact />
     </div>
+
   );
 };
 
