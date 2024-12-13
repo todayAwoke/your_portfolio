@@ -1,9 +1,9 @@
-import { aboutInfo, BaseInfo } from '@/app/Data/data'
+import { aboutInfo } from '@/app/Data/data'
 import SectionHeading from '@/components/helper/SectionHeading'
 import Image from 'next/image'
 import React, { useState } from 'react'
-import { FaCheck, FaGraduationCap, FaMagic, FaMailBulk, FaSchool, FaVoicemail } from 'react-icons/fa'
-import { FaCableCar, FaLocationDot } from 'react-icons/fa6'
+import { FaCheck, FaGraduationCap, FaMagic, FaSchool, FaVoicemail } from 'react-icons/fa'
+import { FaCableCar } from 'react-icons/fa6'
 const paragraphStyles = {
   WebkitLineClamp: 1,
   WebkitBoxOrient: 'vertical',

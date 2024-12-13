@@ -13,7 +13,7 @@ type Props = {
 }
 
 const SliderCard = ({ reference }: Props) => {
-  const { image, name, profession, description, phone,email } = reference;
+  const { image} = reference;
   return (
     <div className='rounded-md overflow-hidden text-white bg-indigo-950 m-4'>
       

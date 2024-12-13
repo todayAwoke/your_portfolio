@@ -1,7 +1,4 @@
-import Image from 'next/image';
 import React from 'react';
-import Nav from '../Navbar/Nav';
-import ResponsiveNav from '../Navbar/ResponsiveNav';
 import { TiSocialFacebook, TiSocialLinkedin, TiSocialTwitter, TiTimesOutline } from 'react-icons/ti';
 import { RiTelegramFill } from "react-icons/ri";
 import Link from 'next/link';
