@@ -10,7 +10,7 @@ const Hero = () => {
                 <div className=' grid grid-cols-1 lg:grid-cols-2 items-center gap-12'>
                     {/* content */}
                     <div >
-                        <h1 data-aos="fade-left" className=' text-2xl md:text-3xl lg:text-4xl text-gray-300 font-semibold  mb-5'>I am <span className='text-green-600 font-bold'>{BaseInfo.name}</span></h1>
+                        <h1 data-aos="fade-left" className='  text-gray-300 text-xl sm:text-2xl mb-5'>I am <span className='text-2xl md:text-3xl lg:text-4xl text-green-600 font-bold'>{BaseInfo.name}</span></h1>
                         {/* title */}
                         <h1 data-aos="fade-right" data-aos-delay="100" className='text-bg text-3xl sm:text-4xl md:text-5xl font-bold  md:leading-[3rem] lg:leading-[3.5rem] xl:leading-[4rem] text-white'>{BaseInfo.position}</h1>
                         {/* discription */}
