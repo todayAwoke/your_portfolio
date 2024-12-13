@@ -32,4 +32,7 @@
   .custom_scrollbar::-webkit-scrollbar-thumb:hover {
     background: #a81818; /* Hover effect */
   }
+  html{
+    scroll-behavior: smooth;
+  }
 }

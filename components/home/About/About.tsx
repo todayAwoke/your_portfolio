@@ -17,10 +17,10 @@ const About = () => {
     <div className='pt-28 pb-16 bg-gray-800' id='about'>
       {/* section heading */}
       <SectionHeading>About Me</SectionHeading>
-      <div className='w-[80%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mt-20 '>
+      <div className='w-[80%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center  '>
         {/* text contet */}
         <div data-aos="fade-left" data-aos-anchor-placement="top-center">
-          <h1 className='text-bg text-[24px] sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-200'>
+          <h1 className='text-bg text-[24px] sm:text-3xl md:text-4xl font-bold text-gray-200'>
             {aboutInfo.title}
           </h1>
           {/* description */}
@@ -53,7 +53,7 @@ const About = () => {
             </div>
           </div>
           <div className='text-white mt-5 sm:mt-8'>
-            <h1 className='text-white mb-14 text-[24px] sm:text-3xl md:text-4xl lg:text-5xl items-center justify-center px-9 text-bg font-bold'>Research Interest</h1>
+            <h1 className='text-white mb-14 text-[24px] sm:text-3xl md:text-4xl items-center justify-center px-9 text-bg font-bold'>Research Interest</h1>
             <div className='mt-2 sm:mt-3'>
               <div className='flex items-center space-x-4 mb-6'>
                 <div className='w-7 h-7 bg-white flex flex-col rounded items-center justify-center'>
@@ -82,7 +82,7 @@ const About = () => {
             </div>
           </div>
           <div className='text-white mt-3 sm:mt-6'>
-            <h1 className='text-white mb-14 text-[24px] sm:text-3xl md:text-4xl lg:text-5xl items-center justify-center px-9 text-bg font-bold'>Professional Membership</h1>
+            <h1 className='text-white mb-14 text-[24px] sm:text-3xl md:text-4xl items-center justify-center px-9 text-bg font-bold'>Professional Membership</h1>
             <div>
               <div className='mt-2'>
                 <div className='flex items-center space-x-4 mb-6'>
@@ -117,9 +117,9 @@ const About = () => {
         </div>
         {/* left part of the page */}
 
-        <div data-aos="zoom-in" data-aos-anchor-placement="top-center" data-aos-delay="100" className=''>
+        <div data-aos="zoom-in" data-aos-anchor-placement="top-center" data-aos-delay="100" className='mt-10'>
           <div className='text-center' >
-            <h1 className='text-white mb-14 text-[24px] sm:text-3xl md:text-4xl lg:text-5xl items-center justify-center px-9 text-bg font-bold'>Experience </h1>
+            <h1 className='text-white mb-14 text-[24px] sm:text-3xl md:text-4xl  items-center justify-center px-9 text-bg font-bold'>Experience </h1>
           </div>
           <div className='grid grid-cols-1 sm:grid-cols-2 gap-16 items-center lg:mx-auto'>
             <div className='relative justify-center rounded-md  '>
@@ -130,10 +130,9 @@ const About = () => {
                 height={150}
                 className='object-cover cursor-pointer h-56 w-56 sm:h-60 sm:w-80 rounded-md hover:scale-105 transition-all duration-200 mx-5 '
               />
-              <p className='absolute text-[#8750f7] opacity-0 hover:opacity-85 top-16 left-10 text:xl sm:text-2xl '>Ethiopian Institute of Agricultural Research</p>
               <p className='mt-3 sm:font-bold  sm:text-xl   text-white px-7 mb-2'> Reseacher 1</p>
               <div>
-                <h2 className='text-[#8750f7] sm:text-xl font-semibold'> Ethiopian Institute of Agricultural Research</h2>
+                <h2 className='text-[#cbc7d3] sm:text-xl font-semibold mb-3'> Ethiopian Institute of Agricultural Research</h2>
                 <div className='items-center flex justify-between text-white gap-5 mb-5'>
                   <p>Apr 2020-Present</p>
                   <p>Addis Ababa, Ethiopia</p>
@@ -149,9 +148,8 @@ const About = () => {
                   <li className='list-disc'>Writing technical publications and reports</li>
                 </ul>
               </div>
-
               <button
-                className='py-2 text-base sm:text-lg text-gray-100 rounded-lg mx-6 px-7 bg-blue-900 hover:bg-blue-700'
+                className='py-2 text-base  text-gray-100 rounded-lg mx-6 px-7 bg-blue-900 hover:bg-blue-700'
                 onClick={() => setIsOpen(!isOpen)}>
                 {isOpen ? 'Read Less...' : 'Read More...'}
               </button>
@@ -183,7 +181,7 @@ const About = () => {
                 </ul>
               </div>
               <button
-                className='py-2 text-base sm:text-lg text-gray-100 rounded-lg mx-6 px-7 bg-blue-900 hover:bg-blue-700'
+                className='py-2 text-base  text-gray-100 rounded-lg mx-6 px-7 bg-blue-900 hover:bg-blue-700'
                 onClick={() => setIsOpen2(!isOpen2)}
               >
                 {isOpen2 ? 'Read Less...' : 'Read More...'}
@@ -192,68 +190,68 @@ const About = () => {
           </div>
           <div className='px-1 mt-16'>
             <div className='text-center' >
-              <h1 className='text-white mb-14 text-[24px] sm:text-3xl md:text-4xl lg:text-5xl items-center justify-center px-9 text-bg font-bold'>Programming Skills </h1>
+              <h1 className='text-white mb-14 text-[24px] sm:text-3xl md:text-4xl items-center justify-center px-9 text-bg font-bold'>Programming Skills </h1>
             </div>
             <div className='grid grid-cols-1 md:mx-auto px-6'>
               <div >
                 <div className='flex items-center gap-16'>
                   <p className='text-white text-sm sm:text-base mb-2'>R</p>
                   <div className="mb-3 bg-blue-700 sm:h-5 h-3 rounded-full flex flex-1 mx-2">
-                    <h2 className="bg-teal-500 w-full h-full flex items-center rounded-3xl justify-center text-sm text-white">100%</h2>
+                    <h2 className="bg-indigo-800 w-full h-full flex items-center rounded-3xl justify-center text-sm text-white">100%</h2>
                   </div>
                 </div>
                 <div className='flex items-center'>
                   <p className='text-white text-sm sm:text-base mb-2'>ASReml-R</p>
                   <div className="mb-3 bg-blue-700 sm:h-5 h-3 rounded-full flex flex-1 mx-2">
-                    <h2 className="bg-teal-500 w-full h-full flex items-center rounded-3xl justify-center text-sm text-white">100%</h2>
+                    <h2 className="bg-indigo-800 w-full h-full flex items-center rounded-3xl justify-center text-sm text-white">100%</h2>
                   </div>
                 </div>
                 <div className='flex items-center gap-11'>
                   <p className='text-white text-sm sm:text-base mb-2 '>SAP</p>
                   <div className="mb-3 bg-blue-700 sm:h-5 h-3 rounded-full flex flex-1 mx-2">
-                    <h2 className="bg-teal-500 w-full h-full flex items-center rounded-3xl justify-center text-sm text-white">100%</h2>
+                    <h2 className="bg-indigo-800 w-full h-full flex items-center rounded-3xl justify-center text-sm text-white">100%</h2>
                   </div>
                 </div>
                 <div className='flex items-center gap-8'>
                   <p className='text-white text-sm sm:text-base mb-2'>SPSS</p>
                   <div className="mb-3 bg-blue-700 sm:h-5 h-3 rounded-full flex flex-1 mx-2">
-                    <h2 className="bg-teal-500 w-full h-full flex items-center rounded-3xl justify-center text-sm text-white">100%</h2>
+                    <h2 className="bg-indigo-800 w-full h-full flex items-center rounded-3xl justify-center text-sm text-white">100%</h2>
                   </div>
                 </div>
                 <div className='flex items-center gap-4'>
                   <p className='text-white text-sm sm:text-base mb-2'>Minitab</p>
                   <div className="mb-3 bg-blue-700 sm:h-5 h-3 rounded-full flex flex-1 mx-2">
-                    <h2 className="bg-teal-400 w-[95%] h-full flex items-center rounded-3xl justify-center text-sm text-white">95%</h2>
+                    <h2 className="bg-indigo-800 w-[95%] h-full flex items-center rounded-3xl justify-center text-sm text-white">95%</h2>
                   </div>
                 </div>
                 <div className='flex items-center gap-7'>
                   <p className='text-white text-sm sm:text-base mb-2'>STATA</p>
                   <div className="mb-3 bg-blue-700 sm:h-5 h-3 rounded-full flex flex-1 mx-2">
-                    <h2 className="bg-teal-300 w-[90%]  h-full flex items-center rounded-3xl justify-center text-sm text-white">90%</h2>
+                    <h2 className="bg-indigo-800 w-[90%]  h-full flex items-center rounded-3xl justify-center text-sm text-white">90%</h2>
                   </div>
                 </div>
                 <div className='flex items-center gap-8'>
                   <p className='text-white text-sm sm:text-base mb-2'>LaTex</p>
                   <div className="mb-3 bg-blue-700 sm:h-5 h-3 rounded-full flex flex-1 mx-2">
-                    <h2 className="bg-purple-500 w-[90%]  h-full flex items-center rounded-3xl justify-center text-sm text-white">90%</h2>
+                    <h2 className="bg-indigo-600 w-[90%]  h-full flex items-center rounded-3xl justify-center text-sm text-white">90%</h2>
                   </div>
                 </div>
                 <div className='flex items-center gap-3'>
                   <p className='text-white text-sm sm:text-base mb-2'>Genstat</p>
                   <div className="mb-3 bg-blue-700 sm:h-5 h-3 rounded-full flex flex-1 mx-2">
-                    <h2 className="bg-purple-500 w-[90%]  h-full flex items-center rounded-3xl justify-center text-sm text-white">90%</h2>
+                    <h2 className="bg-indigo-600 w-[90%]  h-full flex items-center rounded-3xl justify-center text-sm text-white">90%</h2>
                   </div>
                 </div>
                 <div className='flex items-center gap-5'>
                   <p className='text-white text-sm sm:text-base mb-2'>Python</p>
                   <div className="mb-3 bg-blue-700 sm:h-5 h-3 rounded-full flex flex-1 mx-2">
-                    <h2 className="bg-purple-500 w-[80%] h-full flex items-center rounded-3xl justify-center text-sm text-white">80%</h2>
+                    <h2 className="bg-indigo-600 w-[80%] h-full flex items-center rounded-3xl justify-center text-sm text-white">80%</h2>
                   </div>
                 </div>
                 <div className='flex items-center gap-5'>
                   <p className='text-white text-sm sm:text-base mb-2'>AcrGIS</p>
                   <div className="mb-3 bg-blue-700 sm:h-5 h-3 rounded-full flex flex-1 mx-2">
-                    <h2 className="bg-yellow-500 w-[60%] h-full flex items-center rounded-3xl justify-center text-sm text-white">60%</h2>
+                    <h2 className="bg-indigo-400 w-[60%] h-full flex items-center rounded-3xl justify-center text-sm text-white">60%</h2>
                   </div>
                 </div>
               </div>
@@ -261,34 +259,10 @@ const About = () => {
           </div>
           <div className='px-1 mt-16'>
             <div className='text-center' >
-              <h1 className='text-white mb-14 text-[24px] sm:text-3xl md:text-4xl lg:text-5xl items-center justify-center px-9 text-bg font-bold'>Education </h1>
+              <h1 className='text-white mb-14 text-[24px] sm:text-3xl md:text-4xl items-center justify-center px-9 text-bg font-bold'>Education </h1>
             </div>
-            <div className='grid grid-cols-1 sm:grid-cols-2 md:mx-auto px-6 gap-14'>
-
-              <div className='text-white'>
-                <div className='flex gap-3'>
-                  <FaGraduationCap className='text-blue-800' size={48} />
-                  <h1>Master of Science with Honord in Biostatistice</h1>
-                </div>
-                <div className='flex gap-4 mt-2'>
-                  <FaSchool className='text-cyan-800' size={24} />
-                  <p>Jimma University</p>
-                </div>
-                <div className='flex gap-5 sm:gap-10 mt-3'>
-                  <div className='flex gap-2 items-center justify-center'>
-                    <FaCableCar className='text-yellow-600' size={24} />
-                    <p>2014-2016</p>
-                  </div>
-
-                </div>
-                <div className='flex gap-10 mt-3'>
-                  <div className='flex gap-2 items-center justify-center'>
-                    <FaVoicemail className='text-yellow-600' size={24} />
-                    <p>ero@ju.edu.et</p>
-                  </div>
-
-                </div>
-              </div>
+            <div className='grid grid-cols-1 sm:grid-cols-2 md:mx-auto px-6 gap-12'>
+              
               <div className='text-white'>
                 <div className='flex gap-3'>
                   <FaGraduationCap className='text-blue-800' size={48} />
@@ -300,37 +274,60 @@ const About = () => {
                 </div>
 
                 <div className='flex gap-6 sm:gap-10 mt-3'>
-                  <div className='flex gap-2 items-center justify-center'>
+                  <div className='flex gap-5 items-center justify-center'>
                     <FaCableCar className='text-yellow-600' size={24} />
                     <p>2009-2011</p>
                   </div>
                 </div>
                 <div className='flex gap-5 sm:gap-7 mt-3'>
-                  <div className='flex gap-2 items-center justify-center'>
+                  <div className='flex gap-5 items-center justify-center'>
                     <FaVoicemail className='text-yellow-600' size={24} />
                     <p>infolib@lib.aau.edu.et</p>
                   </div>
                 </div>
               </div>
+              <div className='text-white'>
+                <div className='flex gap-3'>
+                  <FaGraduationCap className='text-blue-800' size={56} />
+                  <h1>Master of Science with Honord in Biostatistice</h1>
+                </div>
+                <div className='flex gap-4 mt-2'>
+                  <FaSchool className='text-cyan-800' size={24} />
+                  <p>Jimma University</p>
+                </div>
+                <div className='flex gap-5 sm:gap-10 mt-3'>
+                  <div className='flex gap-5 items-center justify-center'>
+                    <FaCableCar className='text-yellow-600' size={24} />
+                    <p>2014-2016</p>
+                  </div>
+
+                </div>
+                <div className='flex gap-10 mt-3'>
+                  <div className='flex gap-5 items-center justify-center'>
+                    <FaVoicemail className='text-yellow-600' size={24} />
+                    <p>ero@ju.edu.et</p>
+                  </div>
+
+                </div>
+              </div>
             </div>
             <div className='text-white mt-8'>
               <div className='text-center '>
-                <h1 className='text-white mb-14 text-[24px] sm:text-3xl md:text-4xl lg:text-5xl items-center justify-center px-9 text-bg font-bold'>Languages </h1>
+                <h1 className='text-white mb-14 text-[24px] sm:text-3xl md:text-4xl items-center justify-center px-9 text-bg font-bold'>Languages </h1>
               </div>
               <div className='items-center justify-center  px-10 mx-5'>
                 <div className='flex items-center gap-6'>
                   <p className='text-white text-sm sm:text-base mb-2'>English</p>
                   <div className="mb-3 bg-blue-700 sm:h-5 h-3 rounded-full flex flex-1 mx-2">
-                    <h2 className="bg-teal-500 w-full h-full flex items-center rounded-3xl justify-center text-sm text-white">100%</h2>
+                    <h2 className="bg-indigo-800 w-full h-full flex items-center rounded-3xl justify-center text-sm text-white">100%</h2>
                   </div>
                 </div>
                 <div className='flex items-center gap-4'>
                   <p className='text-white text-sm sm:text-base mb-2'>Amharic</p>
                   <div className="mb-3 bg-blue-700 sm:h-5 h-3 rounded-full flex flex-1 mx-2">
-                    <h2 className="bg-teal-500 w-full h-full flex items-center rounded-3xl justify-center text-sm text-white">100%</h2>
+                    <h2 className="bg-indigo-800 w-full h-full flex items-center rounded-3xl justify-center text-sm text-white">100%</h2>
                   </div>
                 </div>
-
               </div>
             </div>
           </div>

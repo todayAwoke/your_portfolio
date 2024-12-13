@@ -38,7 +38,7 @@ const Nav = ({ openNav }: Props) => {
         <div className={`fixed ${navBg ? "bg-[#240b39]" : "bg-transparent"} h-[12vh] z-[10] w-full transition-all duration-200`}>
             <div className='flex items-center h-full justify-between w-[95%] sm:w-[90%] xl:w-[80%] mx-auto'>
                 {/* Logo */}
-                <Link href='/'>
+                <Link href='#hero'>
                     <Image
                         alt='image'
                         src='/images/logo.png'

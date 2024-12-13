@@ -19,7 +19,7 @@ const Hero = () => {
                         <a href='/cv/mmayer.pdf' target="_blank" rel="noopener noreferrer">
                             <button
                             data-aos="zoom-in" data-aos-delay="300"
-                             className='md:px-8 md:py-2.5 px-6 py-1.5 text-white font-semibold text-sm md:text-lg transition-all duration-200 rounded-lg mt-8 bg-blue-900 hover:bg-blue-700 flex items-center space-x-2'>
+                             className='md:px-8 md:py-2.5 px-6 py-1.5 text-white  text-sm md:text-lg transition-all duration-200 rounded-lg mt-8 bg-blue-900 hover:bg-blue-700 flex items-center space-x-2'>
                                 <span>Download CV</span>
                                 <FaDownload />
                             </button>

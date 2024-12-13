@@ -29,7 +29,7 @@ const Slider = () => {
   return (
     <div>
       <div className='text-center' >
-        <h1 className='text-white mb-14 text-[24px] sm:text-3xl md:text-4xl lg:text-5xl items-center justify-center px-9 text-bg font-bold overflow-hidden'>My References </h1>
+        <h1 className='text-white mb-14 text-[24px] sm:text-3xl md:text-4xl  items-center justify-center px-9 text-bg font-bold overflow-hidden'>My References </h1>
       </div>
       <Carousel arrows={true} autoPlay={true} autoPlaySpeed={5000} infinite responsive={responsive} >
         {referenceData.map((reference) => (
