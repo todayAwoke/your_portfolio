@@ -4,51 +4,40 @@ import { FaDownload } from 'react-icons/fa';
 
 type Props = {
   blog: {
-    id: number;
     title: string;
     summary: string;
-    detail: string; // Add detail field here
+    detail: string;
     date: string;
     image: string;
   };
 };
 
 const BlogCard = ({ blog }: Props) => {
-  const { date, image, summary, title, detail } = blog; // Destructure detail
-  const [isOpen, setIsOpen] = useState(false); // State to manage detail visibility
+  const { date, image, summary, title, detail } = blog;
+  const [isOpen, setIsOpen] = useState(false);
 
   const toggleDetails = () => {
-    setIsOpen((prev) => !prev); // Toggle detail visibility
+    setIsOpen((prev) => !prev);
   };
 
   return (
     <div className='bg-indigo-950 rounded-md overflow-hidden'>
-      <Image src={image} alt={title} width={40} height={40} className='w-full h-48 object-cover' />
+      <Image src={image} alt={title} width={500} height={300} className='w-full h-48 object-cover' />
       <div className='p-6'>
-        {/* <div className='items-center justify-center '>
-
-          <h1 className='sm:text-lg text-base cursor-pointer hover:text-gray-100 hover:underline transition-all duration-200 mt-6 mb-2 text-gray-200 leading-[1.6rem] font-bold'>
-            {title}
-          </h1>
-        </div> */}
         <div className='flex flex-col items-start'>
           <p className='text-sm font-semibold text-opacity-90 text-white'>{summary}</p>
-          {isOpen && <p className='mt-2 text-gray-200'>{detail}</p>} {/* Conditional rendering for detail */}
+          {isOpen && <p className='mt-2 text-gray-200'>{detail}</p>}
           <button
             onClick={toggleDetails}
-            data-aos="zoom-in"
-            data-aos-delay="50"
             className='transition-all duration-200 rounded-lg bg-blue-900 hover:bg-blue-700 items-center text-white mt-1 px-3 py-2'>
-            {isOpen ? 'Read Less' : 'Read More'} {/* Toggle button text */}
+            {isOpen ? 'Read Less' : 'Read More'}
           </button>
         </div>
         <div className='mt-4 mb-4 w-full h-[1.5px] bg-gray-400'>
           <div className='flex items-center justify-between'>
-            <h1 className='text-sm text-white'>{date}</h1>
+            <h1 className='text-sm text-white'>{new Date(date).toLocaleDateString()}</h1>
             <a href='/cv/mmayer.pdf' target="_blank" rel="noopener noreferrer">
-              <button
-                data-aos="zoom-in" 
-                className=' text-white font-semibold text-sm m-2  p-2 transition-all duration-200 rounded-lg bg-blue-900 hover:bg-blue-700 flex items-center space-x-2'>
+              <button className='text-white font-semibold text-sm m-2 p-2 transition-all duration-200 rounded-lg bg-blue-900 hover:bg-blue-700 flex items-center space-x-2'>
                 <span>Download PDF</span>
                 <FaDownload />
               </button>
@@ -58,6 +47,6 @@ const BlogCard = ({ blog }: Props) => {
       </div>
     </div>
   );
-}
+};
 
 export default BlogCard;
