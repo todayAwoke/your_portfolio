@@ -5,9 +5,6 @@ import BlogCard from './BlogCard'
 
 const Blog = () => {
     const [posts, setPosts] = useState([]);
-    const [loading, setLoading] = useState(true);
-    const [error, setError] = useState(null);
-
     useEffect(() => {
         const fetchPosts = async () => {
             try {
@@ -18,10 +15,8 @@ const Blog = () => {
                 const data = await response.json();
                 setPosts(data.data);
             } catch (err:any) {
-                setError(err.message);
-            } finally {
-                setLoading(false);
-            }
+                console.log((err.message));
+            } 
         };
 
         fetchPosts();
