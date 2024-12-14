@@ -1,5 +1,5 @@
 import React from 'react';
-import { TiSocialFacebook, TiSocialLinkedin, TiSocialTwitter, TiTimesOutline } from 'react-icons/ti';
+import { TiSocialFacebook, TiSocialLinkedin, TiSocialTwitter } from 'react-icons/ti';
 import { RiTelegramFill } from "react-icons/ri";
 import Link from 'next/link';
 

@@ -1,9 +1,6 @@
 import React from 'react';
 import Reference from './References';
 import SectionHeading from '@/components/helper/SectionHeading';
-import Certificate from './Certificate';
-// import { certificateData } from '@/app/Data/data'
-
 
 const Testimonail = () => {
   return (

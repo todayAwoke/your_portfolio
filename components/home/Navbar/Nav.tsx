@@ -4,7 +4,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 import { FiMenu } from 'react-icons/fi';
-import { HiBars3BottomRight } from 'react-icons/hi2';
 
 // Define props type
 type Props = {

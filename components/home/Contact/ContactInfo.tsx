@@ -1,6 +1,6 @@
 import { contactData } from '@/app/Data/data'
 import React from 'react'
-import { FaEnvelope, FaMap, FaPhone } from 'react-icons/fa'
+import { FaEnvelope,FaPhone } from 'react-icons/fa'
 import { FaLocationDot } from 'react-icons/fa6'
 
 const ContactInfo = () => {
