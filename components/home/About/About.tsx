@@ -4,7 +4,7 @@ import Image from 'next/image'
 import React, { useState } from 'react'
 import { FaCheck, FaGraduationCap, FaMagic, FaSchool, FaVoicemail } from 'react-icons/fa'
 import { FaCableCar } from 'react-icons/fa6'
-const paragraphStyles = {
+const paragraphStyles:React.CSSProperties = {
   WebkitLineClamp: 1,
   WebkitBoxOrient: 'vertical',
   overflow: 'hidden',
@@ -171,7 +171,7 @@ const About = () => {
                   <p>Feb 2013-Apr 2019</p>
                   <p>Jimma, Ethiopia</p>
                 </div>
-                <ul className='text-white' style={isOpen2 ? null : paragraphStyles}>
+                <ul className='text-white' style={isOpen ? {} : paragraphStyles}>
                   <li className='list-disc'> Coordinating Biometry, GIS, and Agro-meteorology team</li>
                   <li className='list-disc'>Implementing research activities.</li>
                   <li className='list-disc'>Generating design of experments for field trials.</li>
