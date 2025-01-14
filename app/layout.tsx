@@ -5,6 +5,8 @@ import { Sora } from 'next/font/google';
 import ResponsiveNav from "@/components/home/Navbar/ResponsiveNav";
 import Footer from "@/components/home/Footer/Footer";
 import ScrollToTop from "@/components/helper/ScrollToTop";
+// import { usePathname } from "next/navigation";
+import Commen_layout from "@/app/commen_layout/index"
 const font = Sora({
   weight: ['100','200','300','400','500','600','700','800'],
   subsets: ['latin']
@@ -29,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="custom_scrollbar">
       <body className={`${font.className} ${geistMono.variable} antialiased`}>
-        <ResponsiveNav />
+        <Commen_layout />
         {children}
         <Footer />
         <ScrollToTop />

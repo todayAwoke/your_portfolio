@@ -35,7 +35,7 @@
     "app/about/page.tsx",
     "next-env.d.ts",
     "dist/types/**/*.ts"
-  ],
+, "app/admin/page.jsx", "services/index.tsx", "app/client-view/BlogCard.jsx", "components/home/Blog/BlogCard.jsx"  ],
   "exclude": [
     "node_modules"
   ]
