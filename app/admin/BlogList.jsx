@@ -1,8 +1,5 @@
 import RemoveBtn from "./RemoveBtn";
-import { HiPencilAlt } from "react-icons/hi";
 import { useState, useEffect } from "react";
-import { useRouter } from "next/navigation";
-
 const getBlog = async () => {
     try {
         const res = await fetch("http://localhost:3000/api/project", {
@@ -39,7 +36,6 @@ const deleteProject = async (id) => {
 
 export default function BlogList() {
     const [projects, setProjects] = useState([]);
-    const router = useRouter();
 
     // Fetch projects when the component mounts
     useEffect(() => {
@@ -54,12 +50,6 @@ export default function BlogList() {
         await deleteProject(id);
         setProjects(projects.filter((project) => project._id !== id)); // Remove project from state
     };
-
-    const handleEdit = (id) => {
-        // Redirect to the update page with the project's ID as a query parameter
-        router.push(`/admin/editBlog/${id}`);
-    };
-
     if (!projects || projects.length === 0) {
         return <div>No projects available</div>;
     }
@@ -86,12 +76,7 @@ export default function BlogList() {
                         </div>
 
                         <div className="flex justify-between items-center mt-4">
-                            <button
-                                onClick={() => handleEdit(t._id)}
-                                className="bg-yellow-500 text-white p-2 rounded-lg hover:bg-yellow-400 transition-all"
-                            >
-                                <HiPencilAlt size={20} />
-                            </button>
+
                             <button
                                 onClick={() => handleDelete(t._id)}
                                 className="bg-red-500 text-white p-2 rounded-lg hover:bg-red-400 transition-all"

@@ -9,15 +9,15 @@ export default function Navbar() {
             <Link className="bg-white p-2 mt-10" href={"/admin/addBlog"}>
                 Add Topic
             </Link>
-<button
-                    onClick={() => {
-                        setAuthUser(false);
-                        sessionStorage.removeItem("authUser");
-                    }}
-                    className="p-4 font-bold text-xl text-black"
-                >
-                    Logout
-                </button>
+            <button
+                onClick={() => {
+                    setAuthUser(false);
+                    sessionStorage.removeItem("authUser");
+                }}
+                className="p-4 font-bold text-xl text-black"
+            >
+                Logout
+            </button>
         </nav>
     );
 }

@@ -15,13 +15,13 @@ const getProjectById = async (id) => {
     }
 };
 
-export default async function ProjectDetails() {
+export default function ProjectDetails() {
     const router = useRouter();
     const { id } = router.query;
 
     if (!id) return <div>Loading...</div>;
 
-    const project = await getProjectById(id);
+    const project = getProjectById(id);
 
     if (!project) {
         return <div>Project not found</div>;

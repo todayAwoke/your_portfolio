@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect} from 'react';
 import SectionHeading from '@/components/helper/SectionHeading';
 import BlogCard from '@/app/client-view/BlogCard';
 // Define the type for blog post

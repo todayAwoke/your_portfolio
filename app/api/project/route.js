@@ -7,9 +7,9 @@ import { NextResponse } from "next/server";
 // POST: Create a new project
 export async function POST(request) {
     try {
-        const { name, website, description, file } = await request.json();
+        const { name, website, description } = await request.json();
         await connectMongoDB();
-        await Project.create({ name, website, description, file });
+        await Project.create({ name, website, description });
         return NextResponse.json({ message: "Project Created" }, { status: 201 });
     } catch (error) {
         console.error("Error creating project:", error);
@@ -30,21 +30,7 @@ export async function GET() {
 }
 
 // GET by ID: Get project details by ID (for dynamic routes)
-export async function GET_BY_ID(request, { params }) {
-    try {
-        const { id } = params;
-        await connectMongoDB();
-        const project = await Project.findById(id); // Fetch by ID
-        if (!project) {
-            return NextResponse.json({ error: "Project not found" }, { status: 404 });
-        }
 
-        return NextResponse.json(project, { status: 200 });
-    } catch (error) {
-        console.error("Error fetching project details:", error);
-        return NextResponse.json({ error: "Failed to fetch project details" }, { status: 500 });
-    }
-}
 
 // DELETE: Delete project by ID
 export async function DELETE(request, { params }) {
@@ -66,7 +52,7 @@ export async function DELETE(request, { params }) {
 export async function PUT(request, { params }) {
     try {
         const { id } = params;
-        const { name, website, description, file } = await request.json();
+        const { name, website, description } = await request.json();
         await connectMongoDB();
         const updatedProject = await Project.findByIdAndUpdate(
             id,

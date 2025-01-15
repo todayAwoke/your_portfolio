@@ -7,7 +7,6 @@ export default function AddBlog() {
     const [name, setName] = useState("");
     const [website, setWebsite] = useState("");
     const [description, setDescription] = useState("");
-    const [file, setFile] = useState("");
     const [successMessage, setSuccessMessage] = useState("");
     const router = useRouter();
 
