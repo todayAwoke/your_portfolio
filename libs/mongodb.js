@@ -1,11 +1,13 @@
-import mongoose from "mongoose";
+import mongoose from 'mongoose';
+import dotenv from 'dotenv';
+
+// Load environment variables from .env file
+dotenv.config();
 
 const connectMongoDB = async () => {
     try {
-        await mongoose.connect(
-            "mongodb+srv://awokedejenie21:mongopassword@cluster0.zfmy8.mongodb.net/portfolio"
-            // "mongodb://localhost:27017/portfolio");
-        );
+        // Use the environment variable for MongoDB URL
+        await mongoose.connect(process.env.MONGO_URL);
         console.log("Connected to MongoDB.");
     } catch (error) {
         console.error("Error connecting to MongoDB:", error);
