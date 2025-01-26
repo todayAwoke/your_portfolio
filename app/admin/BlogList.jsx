@@ -5,11 +5,9 @@ const getBlog = async () => {
         const res = await fetch("http://localhost:3000/api/project", {
             cache: "no-store",
         });
-
         if (!res.ok) {
             throw new Error("Failed to fetch projects");
         }
-
         return res.json(); // should return { projects: [...] }
     } catch (error) {
         console.log("Error loading projects: ", error);

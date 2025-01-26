@@ -24,7 +24,7 @@ export default function AddBlog() {
                 headers: {
                     "Content-type": "application/json",
                 },
-                body: JSON.stringify({ name, website, description, file }),
+                body: JSON.stringify({ name, website, description}),
             });
 
             if (res.ok) {

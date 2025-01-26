@@ -4,7 +4,6 @@ import connectMongoDB from "@/libs/mongodb";
 import Project from "@/models/Project";
 import { NextResponse } from "next/server";
 
-// POST: Create a new project
 export async function POST(request) {
     try {
         const { name, website, description } = await request.json();
@@ -28,16 +27,11 @@ export async function GET() {
         return NextResponse.json({ error: "Failed to fetch projects" }, { status: 500 });
     }
 }
-
-// GET by ID: Get project details by ID (for dynamic routes)
-
-
-// DELETE: Delete project by ID
 export async function DELETE(request, { params }) {
     try {
         const { id } = params;
         await connectMongoDB();
-        const project = await Project.findByIdAndDelete(id); // Delete project by ID
+        const project = await Project.findByIdAndDelete(id);
         if (!project) {
             return NextResponse.json({ error: "Project not found" }, { status: 404 });
         }
@@ -47,8 +41,6 @@ export async function DELETE(request, { params }) {
         return NextResponse.json({ error: "Failed to delete project" }, { status: 500 });
     }
 }
-
-// PUT: Update project by ID
 export async function PUT(request, { params }) {
     try {
         const { id } = params;
