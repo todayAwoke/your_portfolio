@@ -8,19 +8,17 @@ const getBlog = async () => {
         if (!res.ok) {
             throw new Error("Failed to fetch projects");
         }
-        return res.json(); // should return { projects: [...] }
+        return res.json(); 
     } catch (error) {
         console.log("Error loading projects: ", error);
-        return { projects: [] }; // Default return to avoid issues
+        return { projects: [] };
     }
 };
-
 const deleteProject = async (id) => {
     try {
         const res = await fetch(`http://localhost:3000/api/project/${id}`, {
             method: "DELETE",
         });
-
         if (res.ok) {
             alert("Project deleted successfully");
         } else {
